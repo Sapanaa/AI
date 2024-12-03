@@ -72,7 +72,7 @@ export default function Home() {
 <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-600 sm:mt-20 sm:grid-cols-2 lg:mx-0 
 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16 "> 
   {features.map((feature) => (
-    <div className="relative pl-9">
+    <div key={feature.name} className="relative pl-9">
       <dt className="inline font-semibold text-gray-900  ">
     <feature.icon className="absolute left-1 h-6 w-6 text-indigo-600" aria-hidden="true" />
     <h1>{feature.name}</h1>
